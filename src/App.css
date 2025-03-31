@@ -1,38 +1,241 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rosarivo:ital@0;1&display=swap');
+
+*{
+ 
+}
+.hii::-webkit-scrollbar{
+  display: none;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+body{
+  overflow: auto;
+  overflow-x: hidden;
+}
+.app{
+  background-color: aqua;
+  
+}
+.main{
+  display: flex;
+}
+.sidebar{
+  background-color: #212223;
+  height: 100vh;
+  width: 25%;
+}
+.chat{
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+.AniaGpt{
+  font-family: "Rosarivo", cursive;
+  font-size: small;
+  left: 40%;
+  position: relative;
+}
+.AniaGpt h1{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hr{
+  position: relative;
+  top: 80vh;
+  color: rgb(252, 252, 252);
+  font-family: "Gothic A1", sans-serif;
+}
+.hr p{
+  margin-left: 8px;
+}.AniaGpt{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+.textField{
+  top:90vh;
+  width: 89%;
+}
+.send{
+  top:90vh;
+  position: relative;
+}
+.Button{
+  width: 90%;
+  margin-top: 15px;
+  font-size: 13px;
+  padding: 5px;
+  text-transform: capitalize;
+ 
+}
+@media screen and (max-width:450px) {
+  .chat{
+   padding: 0;
+  }
+  .Logo{
+ max-width: 15px;
+ max-height: 15px;
+  }
+  .AniaGpt{
+   position: relative;
+   left: 30%;
+    flex-direction: column;
+  }
+  .AniaGpt h1{
+    text-align: center;
+  }
+
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media screen and (max-width:850px){
+  
+  .textField{
+    width: 75%;
+    position: relative;
+    flex-direction: row;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .hii{
+    position: relative;
+    left: -25%;
+  }
+  .imgChat{
+   max-width: 20px;
+   max-height: 20px;
+  }
+  .mycad{
+    position: relative;
+    left: 10%;
+    top: auto;
+   
+  }
+  
+  
+  
+}
+@media screen and (max-width:500px) {
+ 
+  .a{
+    top: -27vh;
+    position: relative;
+    left: -1vh;
+  }
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width:450px){
+  
+  .textField{
+     width: 60%;
+    position: relative;
+    left: -10%;
+    flex-direction: row; 
+  }
+  .send{
+    position: relative;
+    left: -10%;
+  
   }
 }
+.hii{
+  position: relative;
+  top: 14vh;
+  height: 65vh;
+  overflow: auto;
+ overflow-x: hidden;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+
+
+.chatG3{
+  height: 60px;
+  width: 150px;
+  position: relative;
+  top:-66vh;
+  left: -5%;
+
+}
+.menu{
+  font-weight: bolder;
+  font-family: sans-serif;
+  
+}
+
+.user{
+  color: rgb(237, 231, 231);
+  height: 70vh;
+  width: 100%;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.Logo{
+  height: 25px;
+  width: 25px;
+  margin: 0 6px;
+}
+.Welcome{
+  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  
+  
+}
+.mycad{
+  position: relative;
+  font-size: 10px;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: block;
+  margin-right: 25px;
+  background-color: aqua;
+  top: 25vh;
+ 
+  
+}
+.imgChat{
+  height: 25px;
+  width: 25px;
+}
+.M{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.content{
+  margin-left: 10px;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 15px;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chatbox{
+  position: relative;
+  top: -65vh;
+  left: -3vh
+}
+.end{
+  position: relative;
+  top: -60vh;
+  height: 70vh;
+}
+.new{
+ margin-right: 10px;
+justify-content: center;
+align-items: center;
+position: relative;
+margin-right: 15px;
+top: 30vh;
 }
